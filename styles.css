@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+
+}
+
+.container {
+    color: #fff;
+    background-color: #0a001b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 88vh;
+    position: relative;
+    overflow: hidden;
+    flex-direction: row;
+    padding: 32px 16px;
+
+}
+
+h1 {
+    font-weight: 200;
+    font-size: 54px;
+}
+
+.welcome {
+    display: flex;
+    align-items: center;
+    max-width: 1255px;
+    gap: 2rem;
+}
+
+.computer-image {
+    border-radius: 50%;
+    box-shadow: 0 0 100px 60px rgba(10, 0, 27, 0.8);
+}
+
+
+.wave-wrapper {
+    margin-top: -1px;
+    line-height: 0;
+    width: 100%;
+}
+
+.wave-wrapper img {
+    width: 100%;
+    display: block;
+
+}
+
+.hero-text {
+    text-align: left;
+    padding: 16px;
+}
+
+.hero-text h1 {
+    font-size: 120px;
+}
+
+.hero-text p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+@media (max-width: 1200px) {
+    .welcome {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero-text h1 {
+        font-size: 82px;
+    }
+}
+
+.skills-container {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.skills-container h2 {
+    font-size: 48px;
+
+}
+
+.skills-container p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.cards-container {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1255px;
+}
+
+.card {
+    padding: 16px;
+    border-radius: 32px;
+    border: 1px solid #2b69fb1f;
+    box-shadow: rgba(43, 105, 251, 0.06) 0px 0px 1rem 1rem;
+}
+
+.card h3 {
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 600;
+    padding: 24px 0 24px 0;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+
+.title-container {
+    padding: 48px 0 48px 0;
+}
