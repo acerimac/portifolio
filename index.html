@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/scrollreveal"></script>
+
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,8 +20,9 @@
     <section class="container">
         <div class="welcome">
             <div class="hero-text">
-                <h1> Welcome. </h1>
-                <p> My name is Amanda Cerimac, an Information Technology student passionate about programming in all its
+                <h1 class="welcome-title"> Welcome. </h1>
+                <p class="welcome-description"> My name is Amanda Cerimac, an Information Technology student passionate
+                    about programming in all its
                     areas. I have experience through academic and personal projects, exploring front-end, back-end, and
                     data-related development. I am always learning and seeking to improve my skills as a developer.</p>
             </div>
@@ -38,41 +41,48 @@
             <p> Here are a few technologies I've been working with recently: </p>
         </div>
         <div class="cards-container">
-            <div class="card">
-                <h3> HTML </h3>
-                <p> HTML (Linguagem de Marcação de Hipertexto) é o esqueleto fundamental da web, usado para estruturar e
-                    organizar o conteúdo de páginas, definindo o que é um título, parágrafo, imagem, link ou botão,
-                    servindo como base para a exibição de qualquer site. </p>
+            <div class="cards-wrapper">
+                <div class="card">
+                    <h3> HTML </h3>
+                    <p> HTML (Linguagem de Marcação de Hipertexto) é o esqueleto fundamental da web, usado para
+                        estruturar e
+                        organizar o conteúdo de páginas, definindo o que é um título, parágrafo, imagem, link ou botão,
+                        servindo como base para a exibição de qualquer site. </p>
+                </div>
+                <div class="card">
+                    <h3> JavaScript </h3>
+                    <p> JavaScript (JS) é uma linguagem de programação de alto nível amplamente utilizada para criar
+                        interatividade e comportamento dinâmico em sites.</p>
+                </div>
+                <div class="card">
+                    <h3> CSS </h3>
+                    <p> O CSS (Cascading Style Sheets ou Folhas de Estilo em Cascata) é a linguagem utilizada para
+                        definir a
+                        aparência e o design de uma página da web.</p>
+                </div>
             </div>
-            <div class="card">
-                <h3> JavaScript </h3>
-                <p> JavaScript (JS) é uma linguagem de programação de alto nível amplamente utilizada para criar
-                    interatividade e comportamento dinâmico em sites.</p>
-            </div>
-            <div class="card">
-                <h3> CSS </h3>
-                <p> O CSS (Cascading Style Sheets ou Folhas de Estilo em Cascata) é a linguagem utilizada para definir a
-                    aparência e o design de uma página da web.</p>
-            </div>
-            <div class="card">
-                <h3> Python </h3>
-                <p> Python é uma linguagem de programação de alto nível, interpretada e de propósito geral, conhecida
-                    por
-                    sua sintaxe clara e legibilidade, amplamente utilizada em desenvolvimento web, ciência de dados,
-                    automação e inteligência artificial.</p>
-            </div>
-            <div class="card">
-                <h3> SQL </h3>
-                <p> SQL (Structured Query Language) é uma linguagem de programação padrão usada para gerenciar e
-                    manipular
-                    bancos de dados relacionais, permitindo a criação, consulta, atualização e exclusão de dados de
-                    forma
-                    eficiente.</p>
-            </div>
-            <div class="card">
-                <h3> Power BI </h3>
-                <p> Power BI é uma ferramenta de análise e visualização de dados da Microsoft, utilizada para criar
-                    dashboards e relatórios interativos a partir de dados estruturados e não estruturados.</p>
+            <div class="cards-wrapper">
+                <div class="card">
+                    <h3> Python </h3>
+                    <p> Python é uma linguagem de programação de alto nível, interpretada e de propósito geral,
+                        conhecida
+                        por
+                        sua sintaxe clara e legibilidade, amplamente utilizada em desenvolvimento web, ciência de dados,
+                        automação e inteligência artificial.</p>
+                </div>
+                <div class="card">
+                    <h3> SQL </h3>
+                    <p> SQL (Structured Query Language) é uma linguagem de programação padrão usada para gerenciar e
+                        manipular
+                        bancos de dados relacionais, permitindo a criação, consulta, atualização e exclusão de dados de
+                        forma
+                        eficiente.</p>
+                </div>
+                <div class="card">
+                    <h3> Power BI </h3>
+                    <p> Power BI é uma ferramenta de análise e visualização de dados da Microsoft, utilizada para criar
+                        dashboards e relatórios interativos a partir de dados estruturados e não estruturados.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -97,6 +107,8 @@
         </div>
     </footer>
 
+    <script src="./script.js"></script>
+
 </body>
 
-</html
+</html>

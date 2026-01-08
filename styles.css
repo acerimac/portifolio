@@ -29,7 +29,11 @@ h1 {
     align-items: center;
     max-width: 1255px;
     gap: 2rem;
+    width: 100%;
+
 }
+
+
 
 .computer-image {
     border-radius: 50%;
@@ -75,6 +79,38 @@ h1 {
     }
 }
 
+@media (max-width: 768px) {
+    .cards-wrapper {
+        flex-direction: column;
+    }
+
+    .hero-text {
+        margin-bottom: 32px;
+    }
+
+    .hero-text h1 {
+        font-size: 64px;
+        margin-bottom: 32px;
+    }
+
+    .hero-text p {
+        font-size: 13px;
+    }
+
+    .computer-image {
+        width: 392px;
+        height: 392px;
+    }
+}
+
+@media (max-width: 480px) {
+    .computer-image {
+        width: 312px;
+        height: 312px;
+    }
+
+}
+
 .skills-container {
     text-align: center;
     display: flex;
@@ -95,13 +131,20 @@ h1 {
 }
 
 .cards-container {
-    display: grid;
-    gap: 32px;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
     max-width: 1255px;
 }
 
+.cards-wrapper {
+    display: flex;
+    gap: 32px;
+
+}
+
 .card {
+    flex: 1;
     padding: 16px;
     border-radius: 32px;
     border: 1px solid #2b69fb1f;
@@ -164,5 +207,4 @@ footer {
 .social-media-container {
     display: flex;
     gap: 8px;
-
 }
