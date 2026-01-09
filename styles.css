@@ -33,8 +33,6 @@ h1 {
 
 }
 
-
-
 .computer-image {
     border-radius: 50%;
     box-shadow: 0 0 100px 60px rgba(10, 0, 27, 0.8);
@@ -67,48 +65,17 @@ h1 {
     line-height: 1.6;
 }
 
-@media (max-width: 1200px) {
-    .welcome {
-        flex-direction: column-reverse;
-    }
+.title-container {
+    width: 100%;
+    padding: 0 0 48px 0;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
 }
 
-@media (max-width: 1024px) {
-    .hero-text h1 {
-        font-size: 82px;
-    }
-}
-
-@media (max-width: 768px) {
-    .cards-wrapper {
-        flex-direction: column;
-    }
-
-    .hero-text {
-        margin-bottom: 32px;
-    }
-
-    .hero-text h1 {
-        font-size: 64px;
-        margin-bottom: 32px;
-    }
-
-    .hero-text p {
-        font-size: 13px;
-    }
-
-    .computer-image {
-        width: 392px;
-        height: 392px;
-    }
-}
-
-@media (max-width: 480px) {
-    .computer-image {
-        width: 312px;
-        height: 312px;
-    }
-
+.title-container h2 {
+    font-size: 48px;
+    font-weight: 400;
 }
 
 .skills-container {
@@ -135,12 +102,12 @@ h1 {
     flex-direction: column;
     gap: 16px;
     max-width: 1255px;
+    margin-bottom: 48px;
 }
 
 .cards-wrapper {
     display: flex;
     gap: 32px;
-
 }
 
 .card {
@@ -162,21 +129,6 @@ h1 {
     line-height: 1.6;
 }
 
-
-.title-container {
-    padding: 48px 0 48px 0;
-    gap: 16px;
-    display: flex;
-    flex-direction: column;
-}
-
-.title-container h2 {
-    font-size: 48px;
-    font-weight: 400;
-}
-
-
-
 footer {
     display: flex;
     justify-content: center;
@@ -195,7 +147,6 @@ footer {
     justify-content: space-between;
     width: 100%;
     max-width: 1255px;
-
 }
 
 .svg-logo {
@@ -207,4 +158,57 @@ footer {
 .social-media-container {
     display: flex;
     gap: 8px;
+}
+
+
+@media (max-width: 1200px) {
+    .welcome {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero-text h1 {
+        font-size: 82px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cards-wrapper {
+        flex-direction: column;
+        padding: 0 16px 0 16px;
+    }
+
+    .title-container {
+        padding: 32px 16px 32px 16px;
+    }
+
+    .title-container h2 {
+        font-size: 32px;
+    }
+
+    .hero-text {
+        margin-bottom: 32px;
+    }
+
+    .hero-text h1 {
+        font-size: 64px;
+        margin-bottom: 32px;
+    }
+
+    .hero-text p {
+        font-size: 13px;
+    }
+
+    .computer-image {
+        width: 392px;
+        height: 392px;
+    }
+}
+
+@media (max-width: 480px) {
+    .computer-image {
+        width: 312px;
+        height: 312px;
+    }
 }
